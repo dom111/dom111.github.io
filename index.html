@@ -3,8 +3,27 @@
     <head>
         <title>dom111.github.io</title>
 
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <style>
+            :root {
+                --bs-light: #eee;
+            }
+
+            .jumbotron {
+                background: var(--bs-light, #f8f9fa);
+                margin-bottom: 1.5rem;
+                padding: 3rem 0 1.5rem;
+            }
+
+            dd a {
+                color: #d63384;
+                font-weight: bold;
+            }
+
+            dt {
+                margin-bottom: 1em;
+            }
+        </style>
     </head>
     <body>
         <div class="jumbotron">
@@ -30,14 +49,23 @@
                         <dd><a href="/bash-todo/"><code>bash-todo</code></a></dd>
                         <dt>A simple TODO app for bash that was built based on a question asked on <a href="https://www.reddit.com/r/bash" target="_blank">/r/bash</a>.</dt>
 
-                        <dd><a href="image-to-ansi/"><code>image-to-ansi</code></a></dd>
-                        <dt>A tool to convert an image to a series of ANSI escpae sequences.</dt>
+                        <dd><a href="/image-to-ansi/"><code>image-to-ansi</code></a></dd>
+                        <dt>A tool to convert an image to a series of ANSI escape sequences.</dt>
 
                         <dd><a href="/grep-colors/"><code>grep-colors</code></a></dd>
                         <dt>A tool to help your build a <code>GREP_COLORS</code> string, styling the output from <code>grep</code>.</dt>
 
                         <dd><a href="/webdav-js/"><code>webdav-js</code></a></dd>
-                        <dt>A WebDAV client written in browser-based JavaScript. To be used as a bookmarklet, or inline script direclty in your Apache directory listing header file.</dt>
+                        <dt>A WebDAV client written in browser-based JavaScript. To be used as a bookmarklet, or inline script directly in your Apache directory listing header file.</dt>
+
+                        <dd><a href="https://github.com/dom111/gut"><code>gut</code></a></dd>
+                        <dt>A tool in the loosest sense of the word. Ever mistyped <code>git</code> as <code>gut</code>? I have and at a really annoying time, so I made this, which encouraged me to make...</dt>
+
+                        <dd><a href="/out-of-a-hat"><code>out-of-a-hat</code></a></dd>
+                        <dt>Doing a World Cup sweepstake? Want to have a random team without knowing it right away? Don't want to give your friend's and family's email addresses, phone numbers, social IDs out? This is a simple script that produces a unique URL and utilises the browser's Share API to allow you to send out the assigned thing without knowing what it is, or compromising security.</dt>
+
+                        <dd><a href="/gif-to-ansi/"><code>gif-to-ansi</code></a></dd>
+                        <dt>A tool to convert an animated GIF to a simple shell script that utilises ANSI escape sequences.</dt>
                     </dl>
                 </div>
             </section>
@@ -62,6 +90,12 @@
                     <dl>
                         <dd><a href="/js-shithead/"><code>js-shithead</code></a></dd>
                         <dt>As an exercise in building a <code>Deck</code> object in JavaScript, I built this mostly functional game of shithead (palace), you can play against a simplistic AI and I've tried to build it so that the many differing options of shithead can be implemented.</dt>
+
+                        <dd><a href="https://codepen.io/dom111/pen/mwJwmM"><code>flow-free-clone</code></a></dd>
+                        <dt>Originally an exercise in learning CSS custom properties, a simple clone of the game Flow. I'd like to make a generator, but I think first I need to write a solver and then I need to realise that brute force solving will probably suck and read some books about how to do it properly.</dt>
+
+                        <dd><a href="https://github.com/civ-clone/"><code>civ-clone</code></a></dd>
+                        <dt>Quite some time ago I thought it'd be fun to write AI for Civ. I enjoy Civ 5 and the original Civilization most, so I thought improving the AI for the original would be a good place to start. Unfortunately changing the AI in the source felt like it would be a bit tricky, so I instead thought I'd make a 'bare bones' clone of the original game to write an AI for. I decided that it should be 'modular' so that it would be easier to write AI for certain parts and improve it over time. That ended up being a bit of a trickeier challenge than I'd anticipated (because, of course it was!). I've got the clone into a place where you can just about play, but because of the mechanism I chose to transfer data back and forth, it's slow and slows down more the longer you play it. I need to work on this, but I did made an AI.</dt>
                     </dl>
                 </div>
             </section>
@@ -71,17 +105,6 @@
             </footer>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-5273748-7', 'auto');
-          ga('send', 'pageview');
-
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
 </html>
